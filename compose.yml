@@ -6,7 +6,7 @@ services:
       - bitcoin_data_signet:/home/bitcoin/.bitcoin
 
   ruby:
-    image: ruby:3.1.2
+    build: .
     tty: true
     depends_on:
       - bitcoind
