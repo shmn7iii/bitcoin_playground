@@ -1,6 +1,6 @@
 # bitcoin_playground
 
-Docker Signet に接続しながら気軽に bitcoind をいじれるレポジトリ
+気軽に Docker で Bitcoin signet に接続しながら bitcoind をいじれるレポジトリ
 
 ## Setup
 
