@@ -1,0 +1,15 @@
+services:
+  bitcoind:
+    image: ruimarinho/bitcoin-core:22
+    volumes:
+      - ./config/bitcoin.conf:/home/bitcoin/.bitcoin/bitcoin.conf
+      - bitcoin_data_signet:/home/bitcoin/.bitcoin
+
+  ruby:
+    image: ruby:3.1.2
+    tty: true
+    depends_on:
+      - bitcoind
+
+volumes:
+  bitcoin_data_signet:
